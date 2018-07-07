@@ -1,0 +1,13 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.middle{
+    zoom: 2;
+    transform: translateY(-15px) translateX(-35px);
+
+}
+.imgBack{
+    background-image: url("../images/characters/hagrid.png");
+}

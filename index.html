@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/hover.css">
+    <title>Memory Match</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="dynamicLevel.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+    </div>
+    <div class="settings">
+        <h2 class="played">Match Played: <span class="playedNum">0</span></h2>
+    </div>
+    <div class="gameArea">
+        <div class="gameStatus">
+            <h1>Tried: &nbsp;</h1><div class="wrong">0</div><br>
+            <h1>Correct: &nbsp;</h1><div class="correct">0</div><br>
+            <h1>Accuracy: &nbsp;</h1><div class="accuracy">0%</div>
+            <button class="hvr-sweep-to-bottom reset">RESET</button>
+            <div class="mute"><img src="images/extra/speakerMute.png"></div>
+        </div>
+        <div class="gamePlay">
+            <div class="firstLine">
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/hannah.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/chang.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/hermione.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/harry.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/hermione.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/hagrid.png"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+            </div>
+            <div class="secondLine">
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/snape.png"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/voldemort.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/dumbledore.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/chang.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/hagrid.png"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/hannah.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+            </div>
+            <div class="thirdLine">
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/snape.png"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/dumbledore.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/dracoM.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/harry.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/voldemort.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+                <div class="card">
+                    <div class="cardFront"><img src="images/characters/dracoM.jpg"></div>
+                    <div class="cardBack"><img src="images/backgrounds/hogwarts.png"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="infoSection">
+
+    </div>
+</div>
+<div id="winModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+        </div>
+        <div class="modal-message">
+            <p>YOU WON</p>
+        </div>
+        <div class="modal-footer">
+            <button class="modal-btn"><span>GO TO NEXT LEVEL</span></button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
